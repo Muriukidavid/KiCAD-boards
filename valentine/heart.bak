@@ -1,0 +1,305 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED D?
+U 1 1 584997A6
+P 4200 2250
+F 0 "D?" H 4200 2350 50  0000 C CNN
+F 1 "LED" H 4200 2150 50  0000 C CNN
+F 2 "" H 4200 2250 50  0000 C CNN
+F 3 "" H 4200 2250 50  0000 C CNN
+	1    4200 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D?
+U 1 1 58499804
+P 4200 2550
+F 0 "D?" H 4200 2650 50  0000 C CNN
+F 1 "LED" H 4200 2450 50  0000 C CNN
+F 2 "" H 4200 2550 50  0000 C CNN
+F 3 "" H 4200 2550 50  0000 C CNN
+	1    4200 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED D?
+U 1 1 584998A0
+P 4200 2850
+F 0 "D?" H 4200 2950 50  0000 C CNN
+F 1 "LED" H 4200 2750 50  0000 C CNN
+F 2 "" H 4200 2850 50  0000 C CNN
+F 3 "" H 4200 2850 50  0000 C CNN
+	1    4200 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D?
+U 1 1 584998A6
+P 4200 3150
+F 0 "D?" H 4200 3250 50  0000 C CNN
+F 1 "LED" H 4200 3050 50  0000 C CNN
+F 2 "" H 4200 3150 50  0000 C CNN
+F 3 "" H 4200 3150 50  0000 C CNN
+	1    4200 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 P?
+U 1 1 584998E0
+P 3100 2650
+F 0 "P?" H 3100 2800 50  0000 C CNN
+F 1 "CONN_01X02" V 3200 2650 50  0000 C CNN
+F 2 "" H 3100 2650 50  0000 C CNN
+F 3 "" H 3100 2650 50  0000 C CNN
+	1    3100 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5849993C
+P 3400 2850
+F 0 "#PWR?" H 3400 2600 50  0001 C CNN
+F 1 "GND" H 3400 2700 50  0000 C CNN
+F 2 "" H 3400 2850 50  0000 C CNN
+F 3 "" H 3400 2850 50  0000 C CNN
+	1    3400 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 5849995A
+P 3400 2400
+F 0 "#PWR?" H 3400 2250 50  0001 C CNN
+F 1 "+3V3" H 3400 2540 50  0000 C CNN
+F 2 "" H 3400 2400 50  0000 C CNN
+F 3 "" H 3400 2400 50  0000 C CNN
+	1    3400 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58499993
+P 5200 3350
+F 0 "#PWR?" H 5200 3100 50  0001 C CNN
+F 1 "GND" H 5200 3200 50  0000 C CNN
+F 2 "" H 5200 3350 50  0000 C CNN
+F 3 "" H 5200 3350 50  0000 C CNN
+	1    5200 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2250 4000 2550
+Wire Wire Line
+	4400 2550 4400 2250
+Wire Wire Line
+	4000 2850 4000 3150
+Wire Wire Line
+	4400 3150 4400 2850
+Wire Wire Line
+	3400 2400 3400 2600
+Wire Wire Line
+	3400 2600 3300 2600
+Wire Wire Line
+	3300 2700 3400 2700
+Wire Wire Line
+	3400 2700 3400 2850
+$Comp
+L +3V3 #PWR?
+U 1 1 58499A2B
+P 3300 950
+F 0 "#PWR?" H 3300 800 50  0001 C CNN
+F 1 "+3V3" H 3300 1090 50  0000 C CNN
+F 2 "" H 3300 950 50  0000 C CNN
+F 3 "" H 3300 950 50  0000 C CNN
+	1    3300 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D?
+U 1 1 58499AEC
+P 4200 1650
+F 0 "D?" H 4200 1750 50  0000 C CNN
+F 1 "LED" H 4200 1550 50  0000 C CNN
+F 2 "" H 4200 1650 50  0000 C CNN
+F 3 "" H 4200 1650 50  0000 C CNN
+	1    4200 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D?
+U 1 1 58499AF2
+P 4200 1950
+F 0 "D?" H 4200 2050 50  0000 C CNN
+F 1 "LED" H 4200 1850 50  0000 C CNN
+F 2 "" H 4200 1950 50  0000 C CNN
+F 3 "" H 4200 1950 50  0000 C CNN
+	1    4200 1950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4000 1650 4000 1950
+Wire Wire Line
+	4400 1950 4400 1650
+$Comp
+L LED D?
+U 1 1 58499B3B
+P 4200 1050
+F 0 "D?" H 4200 1150 50  0000 C CNN
+F 1 "LED" H 4200 950 50  0000 C CNN
+F 2 "" H 4200 1050 50  0000 C CNN
+F 3 "" H 4200 1050 50  0000 C CNN
+	1    4200 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D?
+U 1 1 58499B41
+P 4200 1350
+F 0 "D?" H 4200 1450 50  0000 C CNN
+F 1 "LED" H 4200 1250 50  0000 C CNN
+F 2 "" H 4200 1350 50  0000 C CNN
+F 3 "" H 4200 1350 50  0000 C CNN
+	1    4200 1350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4000 1050 4000 1350
+Wire Wire Line
+	4400 1350 4400 1050
+Connection ~ 4000 1200
+Wire Wire Line
+	3800 1000 3800 3000
+Wire Wire Line
+	3800 1800 4000 1800
+Connection ~ 4000 1800
+Connection ~ 3800 1200
+Wire Wire Line
+	3800 2400 4000 2400
+Connection ~ 4000 2400
+Connection ~ 3800 1800
+Wire Wire Line
+	3800 3000 4000 3000
+Connection ~ 4000 3000
+Connection ~ 3800 2400
+$Comp
+L ATMEGA32M1-M IC?
+U 1 1 58499CAE
+P 6350 2550
+F 0 "IC?" H 5400 4380 50  0000 L BNN
+F 1 "ATMEGA32M1-M" H 6850 1150 50  0000 L BNN
+F 2 "QFN32" H 6350 2550 50  0000 C CIN
+F 3 "" H 6350 2550 50  0000 C CNN
+	1    6350 2550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4000 1200 3800 1200
+$Comp
+L BC547 Q?
+U 1 1 58499D6E
+P 3200 1300
+F 0 "Q?" H 3400 1375 50  0000 L CNN
+F 1 "BC547" H 3400 1300 50  0000 L CNN
+F 2 "TO-92" H 3400 1225 50  0000 L CIN
+F 3 "" H 3200 1300 50  0000 L CNN
+	1    3200 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 950  3300 1100
+Wire Wire Line
+	5250 1350 4650 1350
+Wire Wire Line
+	4650 1350 4650 1200
+Wire Wire Line
+	4650 1200 4400 1200
+Connection ~ 4400 1200
+Wire Wire Line
+	5250 1450 4650 1450
+Wire Wire Line
+	4650 1450 4650 1800
+Wire Wire Line
+	4650 1800 4400 1800
+Connection ~ 4400 1800
+Wire Wire Line
+	5250 1550 4700 1550
+Wire Wire Line
+	4700 1550 4700 2400
+Wire Wire Line
+	4700 2400 4400 2400
+Connection ~ 4400 2400
+Wire Wire Line
+	5250 1750 4750 1750
+Wire Wire Line
+	4750 1750 4750 3000
+Wire Wire Line
+	4750 3000 4400 3000
+Connection ~ 4400 3000
+Wire Wire Line
+	3300 1000 3800 1000
+Connection ~ 3300 1000
+Text GLabel 2750 1300 0    60   Output ~ 0
+P22
+Wire Wire Line
+	2750 1300 3000 1300
+$Comp
+L GND #PWR?
+U 1 1 5849A0DE
+P 3300 1650
+F 0 "#PWR?" H 3300 1400 50  0001 C CNN
+F 1 "GND" H 3300 1500 50  0000 C CNN
+F 2 "" H 3300 1650 50  0000 C CNN
+F 3 "" H 3300 1650 50  0000 C CNN
+	1    3300 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1500 3300 1650
+Text GLabel 5050 1850 0    60   Output ~ 0
+P22
+Wire Wire Line
+	5050 1850 5250 1850
+$EndSCHEMATC

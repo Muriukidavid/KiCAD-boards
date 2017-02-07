@@ -1,0 +1,131 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Nokia1616_LCD-cache
+EELAYER 25 0
+EELAYER END
+$Descr User 5512 4331
+encoding utf-8
+Sheet 1 1
+Title "Nokia Color TFT LCD"
+Date "2017-01-29"
+Rev "1"
+Comp "Discovery Center"
+Comment1 "karibe.co"
+Comment2 "@muriukidavid"
+Comment3 "Karibe David"
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X08 P1
+U 1 1 588CF000
+P 1410 1660
+F 0 "P1" H 1410 2110 50  0000 C CNN
+F 1 "CONN_01X08" V 1510 1660 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08" H 1410 1660 50  0001 C CNN
+F 3 "" H 1410 1660 50  0000 C CNN
+	1    1410 1660
+	-1   0    0    1   
+$EndComp
+$Comp
+L Nokia1616_LCD CONN1
+U 1 1 588CF2E5
+P 3080 1640
+F 0 "CONN1" H 3080 890 60  0000 C CNN
+F 1 "Nokia1616_LCD" H 3080 2090 60  0000 C CNN
+F 2 "Connect:Nokia1616_LCD" H 3180 1640 60  0001 C CNN
+F 3 "" H 3180 1640 60  0001 C CNN
+	1    3080 1640
+	1    0    0    -1  
+$EndComp
+Text GLabel 2560 1210 0    47   Input ~ 0
+RESET
+Text GLabel 2560 1310 0    47   Input ~ 0
+CE
+Text GLabel 2560 1410 0    47   Input ~ 0
+MOSI
+Text GLabel 2560 1510 0    47   Input ~ 0
+CLK
+Text GLabel 2380 1750 0    47   Input ~ 0
+VCC
+Text GLabel 2390 2130 0    47   Input ~ 0
+GND
+$Comp
+L C_Small C1
+U 1 1 588CF578
+P 2390 1930
+F 0 "C1" H 2280 2000 50  0000 L CNN
+F 1 "0.1" H 2260 1860 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 2390 1930 50  0001 C CNN
+F 3 "" H 2390 1930 50  0000 C CNN
+	1    2390 1930
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2560 2030 2390 2030
+Wire Wire Line
+	2390 2130 2560 2130
+Wire Wire Line
+	2460 2130 2460 2030
+Connection ~ 2460 2030
+Connection ~ 2460 2130
+Wire Wire Line
+	2560 1850 2480 1850
+Wire Wire Line
+	2480 1850 2480 1830
+Wire Wire Line
+	2480 1830 2390 1830
+Wire Wire Line
+	2380 1750 2560 1750
+Wire Wire Line
+	2440 1750 2440 1830
+Connection ~ 2440 1830
+Connection ~ 2440 1750
+Text GLabel 3590 1300 2    47   Input ~ 0
+LED
+Text GLabel 3590 1560 2    47   Input ~ 0
+VCC
+Text GLabel 1610 2010 2    47   Input ~ 0
+VCC
+Text GLabel 1610 1910 2    47   Input ~ 0
+GND
+Text GLabel 1610 1810 2    47   Input ~ 0
+CE
+Text GLabel 1610 1510 2    47   Input ~ 0
+MOSI
+Text GLabel 1610 1410 2    47   Input ~ 0
+CLK
+Text GLabel 1610 1310 2    47   Input ~ 0
+VCC
+Text GLabel 1610 1710 2    47   Input ~ 0
+RESET
+Text GLabel 1610 1610 2    47   Input ~ 0
+LED
+$EndSCHEMATC

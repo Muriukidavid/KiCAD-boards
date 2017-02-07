@@ -1,0 +1,13 @@
+*               vin x GND
+.subckt vin 1 2
+  Vmic  3 1 ac SIN(0 0.02 440)
+.ends vin
+*RC Filter
+v1 0 vin AC 1
+R1 vout vin 1K
+C1 vout 0 1.59uF
+
+.op
+.ac dec 41 10 100k
+.plot vdb(vout)
+.end

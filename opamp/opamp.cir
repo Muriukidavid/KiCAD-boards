@@ -1,0 +1,12 @@
+.include components.cir
+R1  7 4 2k		
+R2  0 1 2k		
+XCON1  4 0 0 JACK_IN		
+XCON2  6 0 1 JACK_OUT		
+R3  6 7 50k		
+XP1  3 0 2 PWR_IN		
+XU1  6 7 0 3 2 OPAMP		
+.op
+.tran 0.1m 3m
+.plot tran v(4) v(7)
+.end

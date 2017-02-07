@@ -1,0 +1,16 @@
+* /home/karibe/src/kicad_boards/oscillator/oscillator.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: Fri 07 Oct 2016 11:25:36 AM EAT
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+Y1  Net-_C2-Pad2_ Net-_C1-Pad2_ Crystal		
+R1  Net-_C1-Pad2_ Net-_C2-Pad2_ R		
+C1  Net-_C1-Pad1_ Net-_C1-Pad2_ CP1		
+C2  Net-_C1-Pad1_ Net-_C2-Pad2_ CP1		
+P1  Net-_C1-Pad1_ Net-_C2-Pad2_ Net-_C1-Pad2_ CONN_01X03		
+W1  Net-_C1-Pad1_ TEST_1P		
+
+.end

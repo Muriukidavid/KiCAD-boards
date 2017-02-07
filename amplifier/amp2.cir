@@ -1,0 +1,10 @@
+* /home/karibe/src/kicad_boards/amplifier/amp2.cir
+
+XU1  3 6 5 4 2 OPAMP
+R1  6 1 1K
+R2  3 6 10K
+V1  5 1 AC 1
+V2  3 5 AC 2
+P1  2 5 4 PWR
+
+.end
