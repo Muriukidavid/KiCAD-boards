@@ -1,0 +1,38 @@
+Cmp-Mod V01 Created by Cvpcb (after 2015-may-01 BZR unknown)-product   date = 6/3/2015 9:16:20 PM
+
+BeginCmp
+TimeStamp = /556FBBA8;
+Reference = J5;
+ValeurCmp = HEADER_F_2.54MM_2R6P_ST_AU_PTH;
+IdModule  = Header:HEADER_F_100MIL_2R6P_ST_GOLD_PTH;
+EndCmp
+
+BeginCmp
+TimeStamp = /556FB6F8;
+Reference = P1;
+ValeurCmp = HEADER_M_2.54MM_1R10P_ST_AU_PTH;
+IdModule  = Header:HEADER_M_2.54MM_1R10P_ST_AU_PTH;
+EndCmp
+
+BeginCmp
+TimeStamp = /556FB83B;
+Reference = P2;
+ValeurCmp = HEADER_M_2.54MM_1R8P_ST_AU_PTH;
+IdModule  = Header:HEADER_M_2.54MM_1R8P_ST_AU_PTH;
+EndCmp
+
+BeginCmp
+TimeStamp = /556FB60C;
+Reference = P3;
+ValeurCmp = HEADER_M_2.54MM_1R6P_ST_AU_PTH;
+IdModule  = Header:HEADER_M_2.54MM_1R6P_ST_AU_PTH;
+EndCmp
+
+BeginCmp
+TimeStamp = /556FB3A9;
+Reference = P4;
+ValeurCmp = HEADER_M_2.54MM_1R8P_ST_AU_PTH;
+IdModule  = Header:HEADER_M_2.54MM_1R8P_ST_AU_PTH;
+EndCmp
+
+EndListe

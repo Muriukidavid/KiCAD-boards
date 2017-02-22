@@ -1,0 +1,548 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Arduino_UNO_Shield_Template-cache
+EELAYER 25 0
+EELAYER END
+$Descr User 5512 6300
+encoding utf-8
+Sheet 1 2
+Title "NTIF 2016"
+Date "13 feb 2013"
+Rev "1.0"
+Comp "UoN"
+Comment1 "Karibe"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 6    6950 0    100  ~ 0
+Use this schematic as a starting point and add components as needed.  \nMake sure you keep existing reference designators when you annotate\nthe schematic.  Otherwise the netlist will not line up with the board \nfile and the read netlist functionality will foobar the board design.
+NoConn ~ 1194 890 
+Text GLabel 1294 2060 2    40   Input ~ 0
+AD1
+Text GLabel 1294 2160 2    40   Input ~ 0
+AD2
+Text GLabel 1294 2260 2    40   Input ~ 0
+AD3
+Text GLabel 1294 2360 2    40   Input ~ 0
+AD4
+Text GLabel 1294 2460 2    40   Input ~ 0
+AD5
+Text GLabel 1344 990  2    40   Input ~ 0
+IO_REF
+Text GLabel 1344 1090 2    40   Input ~ 0
+RESET
+Text GLabel 1344 1190 2    40   Input ~ 0
+3.3V
+Text GLabel 1344 1290 2    40   Input ~ 0
+5V
+Text GLabel 1344 1390 2    40   Input ~ 0
+GND
+Text GLabel 1344 1490 2    40   Input ~ 0
+GND
+Text GLabel 1344 1590 2    40   Input ~ 0
+VIN
+Text GLabel 4149 2661 0    40   Input ~ 0
+IO0
+Text GLabel 4149 2561 0    40   Input ~ 0
+IO1
+Text GLabel 4149 2461 0    40   Input ~ 0
+IO2
+Text GLabel 4149 2361 0    40   Input ~ 0
+IO3
+Text GLabel 4149 2261 0    40   Input ~ 0
+IO4
+Text GLabel 4149 2161 0    40   Input ~ 0
+IO5
+Text GLabel 4149 2061 0    40   Input ~ 0
+IO6
+Text GLabel 4149 1961 0    40   Input ~ 0
+IO7
+Text GLabel 4149 1711 0    40   Input ~ 0
+IO8
+Text GLabel 4149 1611 0    40   Input ~ 0
+IO9
+Text GLabel 4149 1511 0    40   Input ~ 0
+IO10/SS
+Text GLabel 4149 1411 0    40   Input ~ 0
+IO11/MOSI
+Text GLabel 4149 1311 0    40   Input ~ 0
+IO12/MISO
+Text GLabel 4149 1211 0    40   Input ~ 0
+IO13/SCK
+Text GLabel 4149 1111 0    40   Input ~ 0
+GND
+Text GLabel 4149 1011 0    40   Input ~ 0
+AREF
+Text GLabel 4149 911  0    40   Input ~ 0
+AD4/SDA
+Text GLabel 4149 811  0    40   Input ~ 0
+AD5/SCL
+$Comp
+L HEADER_M_2.54MM_1R8P_ST_AU_PTH P4
+U 1 1 556FB3A9
+P 1044 1240
+F 0 "P4" H 1044 1690 40  0000 C CNN
+F 1 "HEADER_M_2.54MM_1R8P_ST_AU_PTH" V 1144 1240 40  0001 C CNN
+F 2 "Header:HEADER_M_2.54MM_1R8P_ST_AU_PTH" H 1044 1240 60  0001 C CNN
+F 3 "" H 1044 1240 60  0000 C CNN
+	1    1044 1240
+	-1   0    0    -1  
+$EndComp
+$Comp
+L HEADER_M_2.54MM_1R6P_ST_AU_PTH P3
+U 1 1 556FB60C
+P 1064 2200
+F 0 "P3" H 1064 1850 40  0000 C CNN
+F 1 "HEADER_M_2.54MM_1R6P_ST_AU_PTH" V 1164 2200 40  0001 C CNN
+F 2 "Header:HEADER_M_2.54MM_1R6P_ST_AU_PTH" H 1064 2200 60  0001 C CNN
+F 3 "" H 1064 2200 60  0000 C CNN
+	1    1064 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L HEADER_M_2.54MM_1R10P_ST_AU_PTH P1
+U 1 1 556FB6F8
+P 4449 1261
+F 0 "P1" H 4449 711 40  0000 C CNN
+F 1 "HEADER_M_2.54MM_1R10P_ST_AU_PTH" V 4549 1261 40  0001 C CNN
+F 2 "Header:HEADER_M_2.54MM_1R10P_ST_AU_PTH" H 4449 1261 60  0001 C CNN
+F 3 "" H 4449 1261 60  0000 C CNN
+	1    4449 1261
+	1    0    0    1   
+$EndComp
+$Comp
+L HEADER_M_2.54MM_1R8P_ST_AU_PTH P2
+U 1 1 556FB83B
+P 4449 2311
+F 0 "P2" H 4449 1861 40  0000 C CNN
+F 1 "HEADER_M_2.54MM_1R8P_ST_AU_PTH" V 4549 2311 40  0001 C CNN
+F 2 "Header:HEADER_M_2.54MM_1R8P_ST_AU_PTH" H 4449 2311 60  0001 C CNN
+F 3 "" H 4449 2311 60  0000 C CNN
+	1    4449 2311
+	1    0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 57EE12BB
+P 1814 3486
+F 0 "R1" V 1894 3486 50  0000 C CNN
+F 1 "R" V 1814 3486 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 1744 3486 50  0001 C CNN
+F 3 "" H 1814 3486 50  0000 C CNN
+	1    1814 3486
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 57EE139A
+P 2184 3511
+F 0 "R2" V 2264 3511 50  0000 C CNN
+F 1 "R" V 2184 3511 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 2114 3511 50  0001 C CNN
+F 3 "" H 2184 3511 50  0000 C CNN
+	1    2184 3511
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 57EE141F
+P 2484 3516
+F 0 "R3" V 2564 3516 50  0000 C CNN
+F 1 "R" V 2484 3516 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 2414 3516 50  0001 C CNN
+F 3 "" H 2484 3516 50  0000 C CNN
+	1    2484 3516
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 57EE1488
+P 2719 3501
+F 0 "R4" V 2799 3501 50  0000 C CNN
+F 1 "R" V 2719 3501 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 2649 3501 50  0001 C CNN
+F 3 "" H 2719 3501 50  0000 C CNN
+	1    2719 3501
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 57EE14F9
+P 2939 3506
+F 0 "R5" V 3019 3506 50  0000 C CNN
+F 1 "R" V 2939 3506 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 2869 3506 50  0001 C CNN
+F 3 "" H 2939 3506 50  0000 C CNN
+	1    2939 3506
+	1    0    0    -1  
+$EndComp
+Text GLabel 2369 3906 3    60   Input ~ 0
+5V
+Text GLabel 2633 731  1    60   UnSpc ~ 0
+GND
+Text GLabel 1300 1950 2    40   Input ~ 0
+AD0
+Text GLabel 2583 1691 0    40   Input ~ 0
+AD3
+Text GLabel 2592 1500 0    40   Input ~ 0
+AD2
+Text GLabel 2577 1290 0    40   Input ~ 0
+AD1
+Text GLabel 2829 1115 0    40   Input ~ 0
+AD0
+Text GLabel 2842 1997 0    40   Input ~ 0
+AD4
+Text GLabel 2716 3254 1    40   Input ~ 0
+AD1
+Text GLabel 2483 3298 1    40   Input ~ 0
+AD2
+Text GLabel 2179 3256 1    40   Input ~ 0
+AD3
+Text GLabel 1814 3276 1    40   Input ~ 0
+AD4
+Text GLabel 2937 3260 1    40   Input ~ 0
+AD0
+$Comp
+L R R6
+U 1 1 57EE7938
+P 1630 3480
+F 0 "R6" V 1710 3480 50  0000 C CNN
+F 1 "R" V 1630 3480 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 1560 3480 50  0001 C CNN
+F 3 "" H 1630 3480 50  0000 C CNN
+	1    1630 3480
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R7
+U 1 1 57EE79CB
+P 2034 3504
+F 0 "R7" V 2114 3504 50  0000 C CNN
+F 1 "R" V 2034 3504 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 1964 3504 50  0001 C CNN
+F 3 "" H 2034 3504 50  0000 C CNN
+	1    2034 3504
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 57EE7A06
+P 2366 3512
+F 0 "R8" V 2446 3512 50  0000 C CNN
+F 1 "R" V 2366 3512 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 2296 3512 50  0001 C CNN
+F 3 "" H 2366 3512 50  0000 C CNN
+	1    2366 3512
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 57EE7A89
+P 2614 3508
+F 0 "R9" V 2694 3508 50  0000 C CNN
+F 1 "R" V 2614 3508 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 2544 3508 50  0001 C CNN
+F 3 "" H 2614 3508 50  0000 C CNN
+	1    2614 3508
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R10
+U 1 1 57EE7B40
+P 3102 3512
+F 0 "R10" V 3182 3512 50  0000 C CNN
+F 1 "R" V 3102 3512 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 3032 3512 50  0001 C CNN
+F 3 "" H 3102 3512 50  0000 C CNN
+	1    3102 3512
+	1    0    0    -1  
+$EndComp
+Text GLabel 2857 2097 0    40   Input ~ 0
+3.3V
+Text GLabel 2850 2195 0    40   Input ~ 0
+GND
+Text GLabel 2867 2297 0    40   Input ~ 0
+AD4/SDA
+Text GLabel 2866 2396 0    40   Input ~ 0
+AD5/SCL
+$Comp
+L CONN_01X15 P5
+U 1 1 57EED5EE
+P 3103 1696
+F 0 "P5" H 3103 2496 50  0000 C CNN
+F 1 "CONN_01X15" V 3203 1696 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x15" H 3103 1696 50  0001 C CNN
+F 3 "" H 3103 1696 50  0000 C CNN
+	1    3103 1696
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1194 1590 1344 1590
+Wire Wire Line
+	1194 1490 1344 1490
+Wire Wire Line
+	1194 1290 1344 1290
+Wire Wire Line
+	1194 1090 1344 1090
+Wire Wire Line
+	1194 1190 1344 1190
+Wire Wire Line
+	1194 1390 1344 1390
+Wire Wire Line
+	1194 990  1344 990 
+Wire Wire Line
+	4299 1961 4149 1961
+Wire Wire Line
+	4299 2061 4149 2061
+Wire Wire Line
+	4299 2461 4149 2461
+Wire Wire Line
+	4299 2261 4149 2261
+Wire Wire Line
+	4299 2161 4149 2161
+Wire Wire Line
+	4299 2361 4149 2361
+Wire Wire Line
+	4299 2561 4149 2561
+Wire Wire Line
+	4299 2661 4149 2661
+Wire Wire Line
+	4299 1711 4149 1711
+Wire Wire Line
+	4299 1611 4149 1611
+Wire Wire Line
+	4299 1411 4149 1411
+Wire Wire Line
+	4299 1211 4149 1211
+Wire Wire Line
+	4299 1311 4149 1311
+Wire Wire Line
+	4299 1511 4149 1511
+Wire Wire Line
+	4299 1111 4149 1111
+Wire Wire Line
+	4299 911  4149 911 
+Wire Wire Line
+	4299 811  4149 811 
+Wire Wire Line
+	4299 1011 4149 1011
+Wire Wire Line
+	1814 3636 1814 3786
+Wire Wire Line
+	1814 3786 2939 3786
+Wire Wire Line
+	2939 3786 2939 3656
+Wire Wire Line
+	2719 3651 2719 3786
+Connection ~ 2719 3786
+Wire Wire Line
+	2484 3666 2484 3786
+Connection ~ 2484 3786
+Wire Wire Line
+	2184 3661 2184 3786
+Connection ~ 2184 3786
+Wire Wire Line
+	2369 3906 2369 3786
+Connection ~ 2369 3786
+Wire Wire Line
+	1814 3276 1814 3336
+Wire Wire Line
+	2179 3256 2179 3361
+Wire Wire Line
+	2179 3361 2184 3361
+Wire Wire Line
+	2483 3298 2483 3331
+Wire Wire Line
+	2483 3331 2484 3331
+Wire Wire Line
+	2484 3331 2484 3366
+Wire Wire Line
+	2719 3254 2719 3351
+Wire Wire Line
+	2719 3254 2716 3254
+Wire Wire Line
+	2939 3260 2939 3356
+Wire Wire Line
+	2939 3260 2937 3260
+Wire Wire Line
+	2583 1691 2853 1691
+Wire Wire Line
+	2853 1691 2853 1696
+Wire Wire Line
+	2853 1696 2903 1696
+Wire Wire Line
+	2592 1500 2787 1500
+Wire Wire Line
+	2787 1500 2787 1496
+Wire Wire Line
+	2787 1496 2903 1496
+Wire Wire Line
+	2577 1290 2836 1290
+Wire Wire Line
+	2836 1290 2836 1296
+Wire Wire Line
+	2836 1296 2903 1296
+Wire Wire Line
+	2939 3311 3102 3311
+Wire Wire Line
+	3102 3311 3102 3362
+Connection ~ 2939 3311
+Wire Wire Line
+	2939 3726 3102 3726
+Connection ~ 2939 3726
+Wire Wire Line
+	3102 3726 3102 3662
+Wire Wire Line
+	2614 3658 2614 3658
+Wire Wire Line
+	2614 3658 2614 3698
+Wire Wire Line
+	2614 3698 2719 3698
+Connection ~ 2719 3698
+Wire Wire Line
+	2614 3358 2614 3309
+Wire Wire Line
+	2614 3309 2719 3309
+Connection ~ 2719 3309
+Wire Wire Line
+	2366 3362 2366 3340
+Wire Wire Line
+	2366 3340 2484 3340
+Connection ~ 2484 3340
+Wire Wire Line
+	2366 3662 2366 3704
+Wire Wire Line
+	2366 3704 2484 3704
+Connection ~ 2484 3704
+Wire Wire Line
+	2034 3354 2179 3354
+Wire Wire Line
+	2179 3354 2179 3353
+Connection ~ 2179 3353
+Wire Wire Line
+	2034 3654 2034 3707
+Wire Wire Line
+	2034 3707 2184 3707
+Connection ~ 2184 3707
+Wire Wire Line
+	1630 3630 1630 3684
+Wire Wire Line
+	1630 3684 1814 3684
+Connection ~ 1814 3684
+Wire Wire Line
+	1630 3330 1728 3330
+Wire Wire Line
+	1728 3330 1728 3308
+Wire Wire Line
+	1728 3308 1814 3308
+Connection ~ 1814 3308
+Wire Wire Line
+	2903 1096 2903 1115
+Wire Wire Line
+	2903 1115 2829 1115
+Wire Wire Line
+	2903 2396 2866 2396
+Wire Wire Line
+	2903 2296 2882 2296
+Wire Wire Line
+	2882 2296 2882 2297
+Wire Wire Line
+	2882 2297 2867 2297
+Wire Wire Line
+	2903 2196 2850 2196
+Wire Wire Line
+	2850 2196 2850 2195
+Wire Wire Line
+	2903 2096 2857 2096
+Wire Wire Line
+	2857 2096 2857 2097
+Wire Wire Line
+	2903 1996 2842 1996
+Wire Wire Line
+	2842 1996 2842 1997
+Wire Wire Line
+	2633 729  2633 996 
+Wire Wire Line
+	2633 996  2903 996 
+Wire Wire Line
+	2633 995  2633 1396
+Wire Wire Line
+	2633 1196 2903 1196
+Connection ~ 2633 995 
+Wire Wire Line
+	2633 1396 2903 1396
+Connection ~ 2633 1196
+Wire Wire Line
+	2633 1395 2633 1596
+Wire Wire Line
+	2633 1596 2903 1596
+Connection ~ 2633 1395
+Wire Wire Line
+	2633 1595 2633 1896
+Wire Wire Line
+	2633 1896 2903 1896
+Connection ~ 2633 1595
+Wire Wire Line
+	1214 1950 1300 1950
+Wire Wire Line
+	1214 2050 1294 2050
+Wire Wire Line
+	1294 2050 1294 2060
+Wire Wire Line
+	1214 2150 1214 2160
+Wire Wire Line
+	1214 2160 1294 2160
+Wire Wire Line
+	1214 2250 1264 2250
+Wire Wire Line
+	1264 2250 1264 2260
+Wire Wire Line
+	1264 2260 1294 2260
+Wire Wire Line
+	1214 2350 1254 2350
+Wire Wire Line
+	1254 2350 1254 2360
+Wire Wire Line
+	1254 2360 1294 2360
+Wire Wire Line
+	1214 2450 1262 2450
+Wire Wire Line
+	1262 2450 1262 2460
+Wire Wire Line
+	1262 2460 1294 2460
+$Sheet
+S 750  700  1200 1900
+U 5859AC16
+F0 "Sheet5859AC15" 60
+F1 "file5859AC15.sch" 60
+$EndSheet
+$EndSCHEMATC

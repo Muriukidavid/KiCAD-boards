@@ -55,7 +55,7 @@ F 3 "" H 4230 2465 60  0001 C CNN
 	1    4200 2335
 	1    0    0    -1  
 $EndComp
-Text GLabel 4110 1020 1    40   Input ~ 0
+Text GLabel 4310 1020 1    40   Input ~ 0
 5V
 Text GLabel 3645 2500 0    40   Input ~ 0
 3.3V
@@ -77,12 +77,12 @@ U 1 1 58925A67
 P 3500 3905
 F 0 "CON2" H 2850 4505 50  0000 C CNN
 F 1 "Micro_SD_Card" H 4150 4505 50  0000 R CNN
-F 2 "Connect:micro-SDcard" H 4650 4205 50  0001 C CNN
+F 2 "Connect:MicroSDcard" H 4650 4205 50  0001 C CNN
 F 3 "" H 3500 3905 50  0000 C CNN
 	1    3500 3905
 	-1   0    0    1   
 $EndComp
-Text GLabel 4110 1420 3    40   Input ~ 0
+Text GLabel 4310 1420 3    40   Input ~ 0
 LED+
 Text GLabel 4710 2255 2    40   Input ~ 0
 LED+
@@ -181,10 +181,10 @@ U 1 1 5895B110
 P 4210 1220
 F 0 "Q1" H 4410 1295 50  0000 L CNN
 F 1 "BC548" H 4410 1220 50  0000 L CNN
-F 2 "TO-92" H 4410 1145 50  0000 L CIN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 4410 1145 50  0001 L CIN
 F 3 "" H 4210 1220 50  0000 L CNN
 	1    4210 1220
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L ArduinoUnoR3 U1
@@ -260,7 +260,7 @@ Text GLabel 1305 2105 0    40   Input ~ 0
 IO6
 Text GLabel 1305 2025 0    40   Input ~ 0
 IO7
-Text GLabel 4410 1220 2    40   Input ~ 0
+Text GLabel 4010 1220 0    40   Input ~ 0
 AD0
 Text GLabel 3680 1905 0    40   Input ~ 0
 AD1
@@ -298,19 +298,8 @@ Wire Wire Line
 Wire Wire Line
 	930  3830 930  3780
 Connection ~ 930  3780
-Text GLabel 3030 5055 1    40   Input ~ 0
+Text GLabel 3030 5355 1    40   Input ~ 0
 3.3V
-$Comp
-L R R3
-U 1 1 5892BB4E
-P 3030 5205
-F 0 "R3" V 3110 5205 50  0000 C CNN
-F 1 "10K" V 3030 5205 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 2960 5205 50  0001 C CNN
-F 3 "" H 3030 5205 50  0000 C CNN
-	1    3030 5205
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1815 3820 1815 3770
 Connection ~ 1815 3770
@@ -324,7 +313,7 @@ U 1 1 5898F9AF
 P 3030 5505
 F 0 "D1" H 3030 5605 50  0000 C CNN
 F 1 "LED" H 3030 5405 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" H 3030 5505 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603" H 3030 5505 50  0001 C CNN
 F 3 "" H 3030 5505 50  0000 C CNN
 	1    3030 5505
 	0    -1   -1   0   
