@@ -59,7 +59,7 @@ L Nokia1616_LCD CONN1
 U 1 1 588CF2E5
 P 3080 1640
 F 0 "CONN1" H 3080 890 60  0000 C CNN
-F 1 "Nokia1616_LCD" H 3080 2090 60  0000 C CNN
+F 1 "Nokia1616_LCD" H 3090 2225 60  0000 C CNN
 F 2 "Connect:Nokia1616_LCD" H 3180 1640 60  0001 C CNN
 F 3 "" H 3180 1640 60  0001 C CNN
 	1    3080 1640
@@ -109,9 +109,9 @@ Wire Wire Line
 Connection ~ 2440 1830
 Connection ~ 2440 1750
 Text GLabel 3590 1300 2    47   Input ~ 0
-LED
+LED-
 Text GLabel 3590 1560 2    47   Input ~ 0
-VCC
+5V
 Text GLabel 1610 2010 2    47   Input ~ 0
 VCC
 Text GLabel 1610 1910 2    47   Input ~ 0
@@ -123,9 +123,37 @@ MOSI
 Text GLabel 1610 1410 2    47   Input ~ 0
 CLK
 Text GLabel 1610 1310 2    47   Input ~ 0
-VCC
+5V
 Text GLabel 1610 1710 2    47   Input ~ 0
 RESET
 Text GLabel 1610 1610 2    47   Input ~ 0
 LED
+$Comp
+L BC547_BEC_123 Q1
+U 1 1 58C99E38
+P 4515 1925
+F 0 "Q1" H 4715 2000 50  0000 L CNN
+F 1 "BC547_BEC_123" H 3870 2060 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 4715 1850 50  0001 L CIN
+F 3 "" H 4515 1925 50  0000 L CNN
+	1    4515 1925
+	1    0    0    -1  
+$EndComp
+Text GLabel 4615 1725 1    47   Input ~ 0
+LED-
+Text GLabel 4615 2125 3    47   Input ~ 0
+GND
+Text GLabel 4015 1925 0    47   Input ~ 0
+LED
+$Comp
+L R R1
+U 1 1 58C9A3B8
+P 4165 1925
+F 0 "R1" V 4245 1925 50  0000 C CNN
+F 1 "1K" V 4165 1925 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4095 1925 50  0001 C CNN
+F 3 "" H 4165 1925 50  0000 C CNN
+	1    4165 1925
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
