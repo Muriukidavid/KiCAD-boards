@@ -2,23 +2,24 @@
 
 .INCLUDE LMV981.MOD
 
-* 4 0 1 PWR_IN
+* VCC 0 VSS PWR_IN
 *              + g -     
 .subckt PWR_IN 1 2 3
   Vneg 1 2  3.3V
   Vpos 2 3 3.3V
 .ends PWR_IN
 
-*XU1 2 7 0 4 3 OPAMP
+* vout v2 0 VSS VCC OPAMP
 *             o - + p n
-.subckt OPAMP 1 3 2 8 4
-  * PINOUT ORDER  3   2   8  4  1   5
+.subckt OPAMP 1 2 3 4 8
+  * PINOUT ORDER  1   3   6  2  4   5
   * PINOUT ORDER +IN -IN +V -V OUT NSD
-  Xopamp 3 2 4 5 1 NSD LMV981
+  Xopamp 3 2 8 4 1 NSD LMV981
 .ends OPAMP
 
 *               s x g
 .subckt JACK_IN 1 2 3
+  *** Simulate mic input A-note
   Vmic  3 1 ac SIN(0 0.02 440)
 .ends JACK_IN
 

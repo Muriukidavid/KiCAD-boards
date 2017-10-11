@@ -1,0 +1,17 @@
+* /home/karibe/src/kicad_boards/voltage_divider/voltage_divider.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: Fri 24 Mar 2017 03:02:13 PM EAT
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+R2  Vout 0 470		
+R1  Vout Vin 1k		
+V1  Vin 0 DC 12		
+
+.op
+.tran 0.5s 1s
+.tf v(vout,0) Vsource
+.print Vsource v(vout,0)
+.end

@@ -1,13 +1,30 @@
-*               vin x GND
-.subckt vin 1 2
-  Vmic  3 1 ac SIN(0 0.02 440)
-.ends vin
-*RC Filter
-v1 0 vin AC 1
-R1 vout vin 1K
-C1 vout 0 1.59uF
+* /home/karibe/src/kicad_boards/rc_circuit/rc.cir
 
-.op
-.ac dec 41 10 100k
-.plot vdb(vout)
+* EESchema Netlist Version 1.1 (Spice format) creation date: Wed 07 Jun 2017 02:51:09 AM EAT
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+.subckt Jack_in 1 2
+  *** Simulate mic input A-note
+  Vmic  2 1 ac SIN(0 0.02 440)
+.ends Jack_in
+* Sheet Name: /
+XJ1  0 vin Jack_in		
+R1  vout vin 1K		
+C1  vout 0 1.59uF		
+
+* ac v1 1 sin(0 0.02 440)
+* plot vout vin
+* ac v1 1 sin(0 0.02 100)
+* ac v1 1 sin(0 0.02 10k)
+
+*.ac dec 10 1 1Meg
+*.control
+* run
+* Magnitude dB plot for vout on log scale
+* plot vdb(vout) xlog
+*Phase degrees plot for vout on log scale
+*plot {57.29*vp(vout)} xlog
+*.endc
+
 .end

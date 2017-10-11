@@ -1,4 +1,4 @@
-update=Mon 07 Nov 2016 04:16:21 PM EAT
+update=Fri 09 Jun 2017 02:08:47 PM EAT
 version=1
 last_client=kicad
 [pcbnew]
@@ -58,3 +58,13 @@ LibName28=contrib
 LibName29=valves
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

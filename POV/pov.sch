@@ -1,0 +1,615 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:mkl05z32vlc4
+LIBS:pov-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "POV"
+Date "2017-10-11"
+Rev "1"
+Comp "The Discovery Centre"
+Comment1 ""
+Comment2 "@muriukidavid"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MKL05Z32VLC4 U1
+U 1 1 59CC1FB2
+P 6200 4300
+F 0 "U1" H 6300 4500 60  0000 C CNN
+F 1 "MKL05Z32VLC4" H 6300 3200 60  0000 C CNN
+F 2 "Housings_QFP:LQFP-32_7x7mm_Pitch0.8mm" H 6100 4300 60  0001 C CNN
+F 3 "" H 6100 4300 60  0001 C CNN
+	1    6200 4300
+	1    0    0    -1  
+$EndComp
+Text GLabel 5900 4600 0    39   Input ~ 0
+3V3
+Text GLabel 5900 4700 0    39   Input ~ 0
+3V3
+Text GLabel 5900 4800 0    39   Input ~ 0
+GND
+Text GLabel 7350 5500 3    39   Input ~ 0
+LED1
+Text GLabel 9450 4200 0    39   Input ~ 0
+LED2
+Text GLabel 9450 4400 0    39   Input ~ 0
+LED3
+Text GLabel 9450 4600 0    39   Input ~ 0
+LED4
+Text GLabel 9450 4800 0    39   Input ~ 0
+LED5
+Text GLabel 9450 5000 0    39   Input ~ 0
+LED6
+Text GLabel 9450 5200 0    39   Input ~ 0
+LED7
+Text GLabel 9450 5400 0    39   Input ~ 0
+LED8
+$Comp
+L R R8
+U 1 1 59CC20E3
+P 9900 5400
+F 0 "R8" V 9980 5400 50  0000 C CNN
+F 1 "R" V 9900 5400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 9830 5400 50  0001 C CNN
+F 3 "" H 9900 5400 50  0001 C CNN
+	1    9900 5400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R7
+U 1 1 59CC2120
+P 9900 5200
+F 0 "R7" V 9980 5200 50  0000 C CNN
+F 1 "R" V 9900 5200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 9830 5200 50  0001 C CNN
+F 3 "" H 9900 5200 50  0001 C CNN
+	1    9900 5200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R6
+U 1 1 59CC214E
+P 9900 5000
+F 0 "R6" V 9980 5000 50  0000 C CNN
+F 1 "R" V 9900 5000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 9830 5000 50  0001 C CNN
+F 3 "" H 9900 5000 50  0001 C CNN
+	1    9900 5000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R5
+U 1 1 59CC216C
+P 9900 4800
+F 0 "R5" V 9980 4800 50  0000 C CNN
+F 1 "R" V 9900 4800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 9830 4800 50  0001 C CNN
+F 3 "" H 9900 4800 50  0001 C CNN
+	1    9900 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R4
+U 1 1 59CC218D
+P 9900 4600
+F 0 "R4" V 9980 4600 50  0000 C CNN
+F 1 "R" V 9900 4600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 9830 4600 50  0001 C CNN
+F 3 "" H 9900 4600 50  0001 C CNN
+	1    9900 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R3
+U 1 1 59CC2269
+P 9900 4400
+F 0 "R3" V 9980 4400 50  0000 C CNN
+F 1 "R" V 9900 4400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 9830 4400 50  0001 C CNN
+F 3 "" H 9900 4400 50  0001 C CNN
+	1    9900 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R2
+U 1 1 59CC2292
+P 9900 4200
+F 0 "R2" V 9980 4200 50  0000 C CNN
+F 1 "R" V 9900 4200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 9830 4200 50  0001 C CNN
+F 3 "" H 9900 4200 50  0001 C CNN
+	1    9900 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 59CC22C4
+P 9900 4000
+F 0 "R1" V 9980 4000 50  0000 C CNN
+F 1 "R" V 9900 4000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 9830 4000 50  0001 C CNN
+F 3 "" H 9900 4000 50  0001 C CNN
+	1    9900 4000
+	0    -1   -1   0   
+$EndComp
+Text GLabel 9450 4000 0    39   Input ~ 0
+LED1
+$Comp
+L D D1
+U 1 1 59CC245F
+P 9600 4000
+F 0 "D1" H 9600 4100 50  0000 C CNN
+F 1 "D" H 9700 4050 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 9600 4000 50  0001 C CNN
+F 3 "" H 9600 4000 50  0001 C CNN
+	1    9600 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D2
+U 1 1 59CC24E4
+P 9600 4200
+F 0 "D2" H 9600 4300 50  0000 C CNN
+F 1 "D" H 9700 4150 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 9600 4200 50  0001 C CNN
+F 3 "" H 9600 4200 50  0001 C CNN
+	1    9600 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D3
+U 1 1 59CC251D
+P 9600 4400
+F 0 "D3" H 9600 4500 50  0000 C CNN
+F 1 "D" H 9700 4350 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 9600 4400 50  0001 C CNN
+F 3 "" H 9600 4400 50  0001 C CNN
+	1    9600 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D4
+U 1 1 59CC2561
+P 9600 4600
+F 0 "D4" H 9600 4700 50  0000 C CNN
+F 1 "D" H 9700 4550 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 9600 4600 50  0001 C CNN
+F 3 "" H 9600 4600 50  0001 C CNN
+	1    9600 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D5
+U 1 1 59CC259C
+P 9600 4800
+F 0 "D5" H 9600 4900 50  0000 C CNN
+F 1 "D" H 9700 4750 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 9600 4800 50  0001 C CNN
+F 3 "" H 9600 4800 50  0001 C CNN
+	1    9600 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D6
+U 1 1 59CC25DE
+P 9600 5000
+F 0 "D6" H 9600 5100 50  0000 C CNN
+F 1 "D" H 9700 4950 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 9600 5000 50  0001 C CNN
+F 3 "" H 9600 5000 50  0001 C CNN
+	1    9600 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D7
+U 1 1 59CC2685
+P 9600 5200
+F 0 "D7" H 9600 5300 50  0000 C CNN
+F 1 "D" H 9700 5150 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 9600 5200 50  0001 C CNN
+F 3 "" H 9600 5200 50  0001 C CNN
+	1    9600 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D8
+U 1 1 59CC26C9
+P 9600 5400
+F 0 "D8" H 9600 5500 50  0000 C CNN
+F 1 "D" H 9600 5300 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 9600 5400 50  0001 C CNN
+F 3 "" H 9600 5400 50  0001 C CNN
+	1    9600 5400
+	1    0    0    -1  
+$EndComp
+Text GLabel 10150 3900 1    39   Input ~ 0
+5V
+$Comp
+L Conn_01x02 J1
+U 1 1 59CC3449
+P 3600 2400
+F 0 "J1" H 3600 2500 50  0000 C CNN
+F 1 "Conn_01x02" H 3600 2200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x02" H 3600 2400 50  0001 C CNN
+F 3 "" H 3600 2400 50  0001 C CNN
+	1    3600 2400
+	1    0    0    -1  
+$EndComp
+Text GLabel 3400 2400 0    39   Input ~ 0
+Batt_In
+Text GLabel 3400 2500 0    39   Input ~ 0
+GND
+$Comp
+L LD1117S12TR_SOT223 U3
+U 1 1 59CC36C6
+P 6250 2410
+F 0 "U3" H 6100 2535 50  0000 C CNN
+F 1 "LD1117S12TR_SOT223" H 6250 2535 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 6250 2610 50  0001 C CNN
+F 3 "" H 6350 2160 50  0001 C CNN
+	1    6250 2410
+	1    0    0    -1  
+$EndComp
+Text GLabel 6250 2710 3    39   Input ~ 0
+GND
+Text GLabel 5950 2410 0    39   Input ~ 0
+Batt_In
+Text GLabel 6550 2410 2    39   Input ~ 0
+5V
+$Comp
+L LD1117S12TR_SOT223 U2
+U 1 1 59CC3A19
+P 4365 2375
+F 0 "U2" H 4215 2500 50  0000 C CNN
+F 1 "LD1117S12TR_SOT223" H 4365 2500 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 4365 2575 50  0001 C CNN
+F 3 "" H 4465 2125 50  0001 C CNN
+	1    4365 2375
+	1    0    0    -1  
+$EndComp
+Text GLabel 4065 2375 0    39   Input ~ 0
+5V
+Text GLabel 4665 2375 2    39   Input ~ 0
+3V3
+Text GLabel 7450 5500 3    39   Input ~ 0
+LED2
+Text GLabel 7850 5000 2    39   Input ~ 0
+LED3
+Text GLabel 7850 4900 2    39   Input ~ 0
+LED4
+Text GLabel 7850 4800 2    39   Input ~ 0
+LED5
+Text GLabel 7850 4700 2    39   Input ~ 0
+LED6
+Text GLabel 7850 4600 2    39   Input ~ 0
+LED7
+Text GLabel 7850 4500 2    39   Input ~ 0
+LED8
+NoConn ~ 7300 4000
+NoConn ~ 7100 4000
+NoConn ~ 7000 4000
+NoConn ~ 6900 4000
+NoConn ~ 5900 4300
+NoConn ~ 5900 4400
+Text GLabel 5650 4450 1    39   Input ~ 0
+3V3
+$Comp
+L C C1
+U 1 1 59CC4873
+P 5450 4500
+F 0 "C1" H 5475 4600 50  0000 L CNN
+F 1 "C" H 5475 4400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5488 4350 50  0001 C CNN
+F 3 "" H 5450 4500 50  0001 C CNN
+	1    5450 4500
+	0    1    1    0   
+$EndComp
+Text GLabel 5300 4500 0    39   Input ~ 0
+GND
+NoConn ~ 6950 5500
+NoConn ~ 7050 5500
+NoConn ~ 7150 5500
+NoConn ~ 7250 5500
+NoConn ~ 6850 5500
+NoConn ~ 6750 5500
+NoConn ~ 5900 5000
+NoConn ~ 5900 4900
+Text GLabel 6800 4000 1    39   Input ~ 0
+CLK
+Text GLabel 6700 3750 2    39   Input ~ 0
+RESET
+Text GLabel 6600 4000 1    39   Input ~ 0
+DATA
+$Comp
+L Conn_02x04_Odd_Even J2
+U 1 1 59CC6377
+P 2900 4600
+F 0 "J2" H 2950 4800 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 2950 4300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Pogo_SMD_2x04_Pitch1.27mm" H 2900 4600 50  0001 C CNN
+F 3 "" H 2900 4600 50  0001 C CNN
+	1    2900 4600
+	1    0    0    -1  
+$EndComp
+Text GLabel 2700 4500 0    39   Input ~ 0
+3V3
+Text GLabel 3200 4500 2    39   Input ~ 0
+DATA
+Text GLabel 3200 4800 2    39   Input ~ 0
+RESET
+Text GLabel 3200 4600 2    39   Input ~ 0
+CLK
+Text GLabel 3200 4700 2    39   Input ~ 0
+GND
+Text GLabel 2700 4600 0    39   Input ~ 0
+GND
+Text GLabel 2700 4700 0    39   Input ~ 0
+RX
+Text GLabel 2700 4800 0    39   Input ~ 0
+TX
+Text GLabel 7850 4400 2    39   Input ~ 0
+TX
+Text GLabel 7850 4300 2    39   Input ~ 0
+RX
+Text Notes 3200 3050 0    60   ~ 0
+POWER
+Text GLabel 4365 2675 3    39   Input ~ 0
+GND
+Text Notes 2450 5150 0    60   ~ 0
+Debug
+Text Notes 5250 5950 0    60   ~ 0
+Controller
+Text Notes 9050 5600 0    60   ~ 0
+LEDS
+Text GLabel 7200 4000 1    39   Input ~ 0
+IR
+$Comp
+L C C2
+U 1 1 59CCA1D8
+P 4065 2525
+F 0 "C2" H 4090 2625 50  0000 L CNN
+F 1 "C" H 4090 2425 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4103 2375 50  0001 C CNN
+F 3 "" H 4065 2525 50  0001 C CNN
+	1    4065 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 59CCA246
+P 5950 2560
+F 0 "C4" H 5750 2560 50  0000 L CNN
+F 1 "C" H 5975 2460 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 5988 2410 50  0001 C CNN
+F 3 "" H 5950 2560 50  0001 C CNN
+	1    5950 2560
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 59CCA29F
+P 6550 2560
+F 0 "C5" H 6700 2560 50  0000 L CNN
+F 1 "C" H 6575 2460 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6588 2410 50  0001 C CNN
+F 3 "" H 6550 2560 50  0001 C CNN
+	1    6550 2560
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 59CCA777
+P 4665 2525
+F 0 "C3" H 4690 2625 50  0000 L CNN
+F 1 "C" H 4690 2425 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4703 2375 50  0001 C CNN
+F 3 "" H 4665 2525 50  0001 C CNN
+	1    4665 2525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 3900 10150 4000
+Wire Wire Line
+	10150 4000 10050 4000
+Wire Wire Line
+	10050 4200 10100 4200
+Wire Wire Line
+	10100 4000 10100 5400
+Connection ~ 10100 4000
+Wire Wire Line
+	10100 4400 10050 4400
+Connection ~ 10100 4200
+Wire Wire Line
+	10100 4600 10050 4600
+Connection ~ 10100 4400
+Wire Wire Line
+	10100 4800 10050 4800
+Connection ~ 10100 4600
+Wire Wire Line
+	10100 5000 10050 5000
+Connection ~ 10100 4800
+Wire Wire Line
+	10100 5200 10050 5200
+Connection ~ 10100 5000
+Wire Wire Line
+	10100 5400 10050 5400
+Connection ~ 10100 5200
+Wire Wire Line
+	5600 4500 5900 4500
+Wire Wire Line
+	5650 4450 5650 4500
+Connection ~ 5650 4500
+Wire Notes Line
+	3000 2050 7200 2050
+Wire Notes Line
+	7200 2050 7200 3150
+Wire Notes Line
+	7200 3150 3000 3150
+Wire Notes Line
+	3000 3150 3000 2050
+Wire Notes Line
+	2300 4200 2300 5250
+Wire Notes Line
+	2300 5250 3700 5250
+Wire Notes Line
+	3700 5250 3700 4200
+Wire Notes Line
+	3700 4200 2300 4200
+Wire Notes Line
+	5050 3450 8500 3450
+Wire Notes Line
+	8500 3450 8500 6100
+Wire Notes Line
+	8500 6100 5050 6100
+Wire Notes Line
+	5050 6100 5050 3450
+Wire Notes Line
+	9000 3650 10500 3650
+Wire Notes Line
+	10500 3650 10500 5650
+Wire Notes Line
+	10500 5650 9000 5650
+Wire Notes Line
+	9000 5650 9000 3650
+Wire Wire Line
+	5950 2710 6550 2710
+Connection ~ 6250 2710
+Wire Wire Line
+	4065 2675 4665 2675
+Connection ~ 4365 2675
+Wire Notes Line
+	7970 2020 7970 3130
+Wire Notes Line
+	7970 3130 9610 3130
+Wire Notes Line
+	9610 3130 9610 2020
+Wire Notes Line
+	9610 2020 7970 2020
+$Comp
+L Battery_Cell BT1
+U 1 1 59D6A569
+P 5140 2735
+F 0 "BT1" H 5240 2835 50  0000 L CNN
+F 1 "Battery_Cell" H 5240 2735 50  0000 L CNN
+F 2 "Battery_Holders:Keystone_103_1x20mm-CoinCell" V 5140 2795 50  0001 C CNN
+F 3 "" V 5140 2795 50  0001 C CNN
+	1    5140 2735
+	1    0    0    -1  
+$EndComp
+Text GLabel 5140 2835 3    39   Input ~ 0
+GND
+Text GLabel 5140 2535 1    39   Input ~ 0
+5V
+$Comp
+L R R9
+U 1 1 59DB85FE
+P 9350 2250
+F 0 "R9" V 9430 2250 50  0000 C CNN
+F 1 "1K" V 9350 2250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 9280 2250 50  0001 C CNN
+F 3 "" H 9350 2250 50  0001 C CNN
+	1    9350 2250
+	0    1    1    0   
+$EndComp
+Text GLabel 9500 2250 3    39   Input ~ 0
+3V3
+$Comp
+L CP_Small C6
+U 1 1 59DB8B5E
+P 9100 2350
+F 0 "C6" H 9110 2420 50  0000 L CNN
+F 1 "100uF" H 9110 2270 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 9100 2350 50  0001 C CNN
+F 3 "" H 9100 2350 50  0001 C CNN
+	1    9100 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L TSOP335xx U4
+U 1 1 59DB8CB8
+P 8550 2450
+F 0 "U4" H 8150 2750 50  0000 L CNN
+F 1 "TSOP335xx" H 8150 2150 50  0000 L CNN
+F 2 "LEDs:LED-5MM-3" H 8500 2075 50  0001 C CNN
+F 3 "" H 9200 2750 50  0001 C CNN
+	1    8550 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 2250 9200 2250
+Connection ~ 9100 2250
+Text GLabel 8950 2450 2    39   Input ~ 0
+IR
+Text GLabel 9100 2650 2    39   Input ~ 0
+GND
+Wire Wire Line
+	9100 2450 9100 2650
+Wire Wire Line
+	9100 2650 8950 2650
+Text GLabel 6400 3750 0    39   Input ~ 0
+3V3
+$Comp
+L R R10
+U 1 1 59DB9ECF
+P 6550 3750
+F 0 "R10" V 6630 3750 50  0000 C CNN
+F 1 "10K" V 6550 3750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6480 3750 50  0001 C CNN
+F 3 "" H 6550 3750 50  0001 C CNN
+	1    6550 3750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6700 4000 6700 3750
+$Comp
+L SW_Push SW1
+U 1 1 59DBA747
+P 5500 3850
+F 0 "SW1" H 5550 3950 50  0000 L CNN
+F 1 "SW_Push" H 5500 3790 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_FSMSM" H 5500 4050 50  0001 C CNN
+F 3 "" H 5500 4050 50  0001 C CNN
+	1    5500 3850
+	0    1    1    0   
+$EndComp
+Text GLabel 5500 4050 3    39   Input ~ 0
+GND
+Text GLabel 5500 3650 2    39   Input ~ 0
+RESET
+$EndSCHEMATC

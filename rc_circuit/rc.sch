@@ -28,6 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:rc-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -47,7 +48,7 @@ L CONN_01X02 v1
 U 1 1 58207F0B
 P 2250 3900
 F 0 "v1" H 2250 4050 50  0000 C CNN
-F 1 "AC_1" V 2350 3900 50  0000 C CNN
+F 1 "DC 0 AC 1" V 2350 3900 50  0000 C CNN
 F 2 "" H 2250 3900 50  0000 C CNN
 F 3 "" H 2250 3900 50  0000 C CNN
 	1    2250 3900
@@ -75,17 +76,6 @@ F 3 "" H 3300 3900 50  0000 C CNN
 	1    3300 3900
 	1    0    0    -1  
 $EndComp
-$Comp
-L GND #PWR1
-U 1 1 5820806A
-P 2800 4150
-F 0 "#PWR1" H 2800 3900 50  0001 C CNN
-F 1 "GND" H 2800 4000 50  0000 C CNN
-F 2 "" H 2800 4150 50  0000 C CNN
-F 3 "" H 2800 4150 50  0000 C CNN
-	1    2800 4150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2450 3950 2450 4150
 Wire Wire Line
@@ -109,4 +99,8 @@ Wire Wire Line
 	3200 3250 3300 3250
 Connection ~ 3300 3550
 Connection ~ 2450 3550
+Text GLabel 2800 4150 3    60   Input ~ 0
+0
+Text Notes 3650 4100 0    60   ~ 0
++PSPICE\n.ac dec 10 1 1Meg\n.control\nrun\n*Magnitude dB plot for vout on log scale\nplot vdb(vout) xlog\n*Phase degrees plot for vout on log scale\nplot {57.29*vp(vout)} xlog\n.endc
 $EndSCHEMATC

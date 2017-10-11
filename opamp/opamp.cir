@@ -1,12 +1,28 @@
+* /home/karibe/src/kicad_boards/opamp/opamp.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: Fri 09 Jun 2017 08:38:03 PM EAT
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
 .include components.cir
-R1  7 4 2k		
-R2  0 1 2k		
-XCON1  4 0 0 JACK_IN		
-XCON2  6 0 1 JACK_OUT		
-R3  6 7 50k		
-XP1  3 0 2 PWR_IN		
-XU1  6 7 0 3 2 OPAMP		
-.op
-.tran 0.1m 3m
-.plot tran v(4) v(7)
+
+* Sheet Name: /
+R1  v2 vin 2k		
+R2  0 v3 2k		
+R3  vout v2 50k		
+XP1  VCC 0 VSS PWR_IN		
+XU1  vout v2 0 VSS VCC OPAMP		
+XJ1  vin 0 0 JACK_IN		
+XJ2  vout v3 0 JACK_OUT		
+
+.control
+op
+print all
+tran 0.1m 3m
+plot V(vout) V(vin)
+
+ac dec 10 1 100K
+plot V(-1*vout/vin)
+.endc
+
 .end
