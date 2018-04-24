@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/karibe/src/kicad_boards/BJT_amplifier/BJT_amplifier.sch</source>
+    <date>Fri 09 Feb 2018 06:53:22 PM EAT</date>
+    <tool>Eeschema no-vcs-found-826efab~61~ubuntu16.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>BJT_amplifier.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="v1">
+      <value>DC 12</value>
+      <libsource lib="BJT_amplifier-rescue" part="CONN_01X02-RESCUE-BJT_amplifier"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59366B5C</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>1Meg</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5936898A</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>1k</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59368BD6</tstamp>
+    </comp>
+    <comp ref="v2">
+      <value>DC 10</value>
+      <libsource lib="BJT_amplifier-rescue" part="CONN_01X02-RESCUE-BJT_amplifier"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59368BFF</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>BJT1</value>
+      <libsource lib="device" part="Q_NPN_EBC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5936CAC5</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="BJT_amplifier-rescue" part="CONN_01X02-RESCUE-BJT_amplifier">
+      <footprints>
+        <fp>Pin_Header_Straight_1X*</fp>
+        <fp>Pin_Header_Angled_1X*</fp>
+        <fp>Socket_Strip_Straight_1X*</fp>
+        <fp>Socket_Strip_Angled_1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_01X02-RESCUE-BJT_amplifier</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="Q_NPN_EBC">
+      <description>Transistor NPN (general)</description>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NPN_EBC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="E" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="BJT_amplifier-rescue">
+      <uri>/home/karibe/src/kicad_boards/BJT_amplifier/BJT_amplifier-rescue.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="4">
+      <node ref="R2" pin="1"/>
+      <node ref="v2" pin="1"/>
+    </net>
+    <net code="2" name="2">
+      <node ref="R1" pin="2"/>
+      <node ref="Q1" pin="2"/>
+    </net>
+    <net code="3" name="3">
+      <node ref="Q1" pin="1"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="4" name="1">
+      <node ref="R1" pin="1"/>
+      <node ref="v1" pin="1"/>
+    </net>
+    <net code="5" name="0">
+      <node ref="v1" pin="2"/>
+      <node ref="v2" pin="2"/>
+      <node ref="Q1" pin="3"/>
+    </net>
+  </nets>
+</export>

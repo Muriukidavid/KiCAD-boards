@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name voltage_divider-rescue)(type Legacy)(uri ${KIPRJMOD}/voltage_divider-rescue.lib)(options "")(descr ""))
+)

@@ -1,10 +1,6 @@
-update=Wed 18 Apr 2018 04:43:17 PM EAT
+update=Wed 25 Jan 2017 01:09:30 AM EAT
 version=1
 last_client=kicad
-[general]
-version=1
-RootSch=
-BoardNm=
 [pcbnew]
 version=1
 LastNetListRead=
@@ -60,5 +56,5 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=header
-LibName31=/home/karibe/src/just-us/Circuit/justVI-components
+[general]
+version=1

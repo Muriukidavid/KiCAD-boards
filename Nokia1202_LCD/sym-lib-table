@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Nokia1202_LCD-rescue)(type Legacy)(uri ${KIPRJMOD}/Nokia1202_LCD-rescue.lib)(options "")(descr ""))
+)

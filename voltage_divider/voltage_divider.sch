@@ -1,35 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
+EESchema Schematic File Version 4
 LIBS:voltage_divider-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -44,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L R R2
+L device:R R2
 U 1 1 58D5003A
 P 5500 3900
 F 0 "R2" V 5580 3900 50  0000 C CNN
@@ -55,7 +26,7 @@ F 3 "" H 5500 3900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R1
+L device:R R1
 U 1 1 58D500BD
 P 5050 3600
 F 0 "R1" V 5130 3600 50  0000 C CNN
@@ -66,7 +37,7 @@ F 3 "" H 5050 3600 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L CONN_01X02 v1
+L voltage_divider-rescue:CONN_01X02-RESCUE-voltage_divider v1
 U 1 1 58D50985
 P 4500 3800
 F 0 "v1" H 4500 3950 50  0000 C CNN

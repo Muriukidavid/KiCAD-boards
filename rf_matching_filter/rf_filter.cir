@@ -1,0 +1,24 @@
+* /home/karibe/src/kicad_boards/rf_matching_filter/rf_filter.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: Tue 24 Apr 2018 05:31:31 PM EAT
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+C1  vin 0 0.7pF		
+L1  vin vout 0.0051uH		
+C2  vout 0 0.7pF		
+C3  vout 0 10pF		
+v1  vin 0 DC 0 AC 1		
+
+.ac dec 1000 100Meg 2500Meg
+.control
+run
+* Magnitude dB plot for vout on log scale
+plot vdb(vout) xlog
+*Phase degrees plot for vout on log scale
+plot {57.29*vp(vout)} xlog
+.endc
+
+.end

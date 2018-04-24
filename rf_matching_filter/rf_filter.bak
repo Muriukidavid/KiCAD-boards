@@ -1,0 +1,136 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:rf_filter-cache
+EELAYER 25 0
+EELAYER END
+$Descr User 5512 4000
+encoding utf-8
+Sheet 1 1
+Title "RF Filter Simulation"
+Date "2018-04-24"
+Rev "1"
+Comp "Sign-IO"
+Comment1 "@muriukidavid"
+Comment2 "karfes@gmail.com"
+Comment3 "http://karibe.co.ke"
+Comment4 "Drawn by: David Karibe"
+$EndDescr
+$Comp
+L C_Small C1
+U 1 1 5ADF257F
+P 1250 1500
+F 0 "C1" H 1350 1500 50  0000 L CNN
+F 1 "0.7pF" H 1260 1420 50  0000 L CNN
+F 2 "" H 1250 1500 50  0001 C CNN
+F 3 "" H 1250 1500 50  0001 C CNN
+	1    1250 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L L_Small L1
+U 1 1 5ADF25DA
+P 1500 1400
+F 0 "L1" H 1530 1440 50  0000 L CNN
+F 1 "0.0051uH" H 1530 1360 50  0000 L CNN
+F 2 "" H 1500 1400 50  0001 C CNN
+F 3 "" H 1500 1400 50  0001 C CNN
+	1    1500 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_Small C2
+U 1 1 5ADF2657
+P 1750 1500
+F 0 "C2" H 1850 1500 50  0000 L CNN
+F 1 "0.7pF" H 1760 1420 50  0000 L CNN
+F 2 "" H 1750 1500 50  0001 C CNN
+F 3 "" H 1750 1500 50  0001 C CNN
+	1    1750 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C3
+U 1 1 5ADF268C
+P 2000 1400
+F 0 "C3" H 2100 1400 50  0000 L CNN
+F 1 "10pF" H 2010 1320 50  0000 L CNN
+F 2 "" H 2000 1400 50  0001 C CNN
+F 3 "" H 2000 1400 50  0001 C CNN
+	1    2000 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x02 v1
+U 1 1 5ADF26CE
+P 900 1400
+F 0 "v1" H 900 1200 50  0000 C CNN
+F 1 "DC 0 AC 1" V 1000 1350 50  0000 C CNN
+F 2 "" H 900 1400 50  0001 C CNN
+F 3 "" H 900 1400 50  0001 C CNN
+	1    900  1400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 1400 1400 1400
+Connection ~ 1250 1400
+Wire Wire Line
+	1600 1400 1900 1400
+Connection ~ 1750 1400
+Wire Wire Line
+	1100 1500 1100 1750
+Wire Wire Line
+	1100 1750 2200 1750
+Wire Wire Line
+	1750 1600 1750 1750
+Connection ~ 1750 1750
+Wire Wire Line
+	1250 1600 1250 1750
+Connection ~ 1250 1750
+Text GLabel 1500 1750 3    60   Input ~ 0
+0
+Text GLabel 1250 1300 1    60   Input ~ 0
+vin
+Text GLabel 1750 1300 1    60   Output ~ 0
+vout
+Wire Wire Line
+	1250 1400 1250 1300
+Text Notes 2950 1600 0    60   ~ 0
++PSPICE\n.ac dec 10 1 1Meg\n.control\nrun\n* Magnitude dB plot for vout on log scale\nplot vdb(vout) xlog\n*Phase degrees plot for vout on log scale\nplot {57.29*vp(vout)} xlog\n.endc
+Wire Wire Line
+	1750 1400 1750 1300
+Wire Wire Line
+	2200 1750 2200 1400
+Wire Wire Line
+	2200 1400 2100 1400
+$EndSCHEMATC

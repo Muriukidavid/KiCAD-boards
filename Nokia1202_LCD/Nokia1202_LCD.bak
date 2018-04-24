@@ -1,41 +1,13 @@
 EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
+LIBS:justVI-components
 LIBS:Nokia1202_LCD-cache
 EELAYER 25 0
 EELAYER END
-$Descr A4 8268 11693 portrait
+$Descr User 7874 7874
 encoding utf-8
 Sheet 1 1
 Title "Nokia 1202 LCD Standard Breakout"
-Date "2018-01-24"
+Date "2018-04-24"
 Rev "1"
 Comp "Karibe"
 Comment1 "@muriukidavid"
@@ -43,113 +15,113 @@ Comment2 "Karibe.co.ke"
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 3770 2840 0    60   UnSpc ~ 0
+Text GLabel 3045 4750 0    60   UnSpc ~ 0
 VCC
-Text GLabel 3790 3190 0    60   UnSpc ~ 0
+Text GLabel 3065 5100 0    60   UnSpc ~ 0
 GND
 $Comp
-L nokia1202LCD CONN1
+L Nokia1202_LCD-rescue:nokia1202LCD-RESCUE-Nokia1202_LCD CONN1
 U 1 1 5887E9AD
-P 4580 2290
-F 0 "CONN1" H 4480 1240 60  0000 C CNN
-F 1 "nokia1202LCD" H 4580 2390 60  0000 C CNN
-F 2 "Connect:Nokia1202LCD" H 4580 2290 60  0001 C CNN
-F 3 "" H 4580 2290 60  0001 C CNN
-	1    4580 2290
+P 3855 4200
+F 0 "CONN1" H 3755 3150 60  0000 C CNN
+F 1 "nokia1202LCD" H 3855 4300 60  0000 C CNN
+F 2 "Connect:Nokia1202LCD" H 3855 4200 60  0001 C CNN
+F 3 "" H 3855 4200 60  0001 C CNN
+	1    3855 4200
 	1    0    0    -1  
 $EndComp
-Text GLabel 3020 3180 2    49   UnSpc ~ 0
+Text GLabel 2295 5090 2    49   UnSpc ~ 0
 VCC
 $Comp
-L CONN_01X08 P1
+L Nokia1202_LCD-rescue:CONN_01X08-RESCUE-Nokia1202_LCD P1
 U 1 1 5887EAD6
-P 2820 2830
-F 0 "P1" H 2820 3280 50  0000 C CNN
-F 1 "CONN_01X08" V 2920 2830 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08" H 2820 2830 50  0001 C CNN
-F 3 "" H 2820 2830 50  0000 C CNN
-	1    2820 2830
+P 2095 4740
+F 0 "P1" H 2095 5190 50  0000 C CNN
+F 1 "CONN_01X08" V 2195 4740 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08" H 2095 4740 50  0001 C CNN
+F 3 "" H 2095 4740 50  0000 C CNN
+	1    2095 4740
 	-1   0    0    1   
 $EndComp
-Text GLabel 3020 3080 2    49   UnSpc ~ 0
+Text GLabel 2295 4990 2    49   UnSpc ~ 0
 GND
-Text GLabel 3020 2880 2    49   Input ~ 0
+Text GLabel 2295 4790 2    49   Input ~ 0
 RESET
-Text GLabel 4080 2440 0    49   Input ~ 0
+Text GLabel 3355 4350 0    49   Input ~ 0
 CE
-Text GLabel 3020 2980 2    49   Input ~ 0
+Text GLabel 2295 4890 2    49   Input ~ 0
 CE
-Text GLabel 4080 2340 0    49   Input ~ 0
+Text GLabel 3355 4250 0    49   Input ~ 0
 RESET
-Text GLabel 3020 2680 2    49   Input ~ 0
+Text GLabel 2295 4590 2    49   Input ~ 0
 MOSI
-Text GLabel 3020 2580 2    49   Input ~ 0
+Text GLabel 2295 4490 2    49   Input ~ 0
 CLK
-Text GLabel 3020 2480 2    49   Input ~ 0
+Text GLabel 2295 4390 2    49   Input ~ 0
 VCC
-Text GLabel 4080 2540 0    49   Input ~ 0
+Text GLabel 3355 4450 0    49   Input ~ 0
 MOSI
-Text GLabel 4080 2640 0    49   Input ~ 0
+Text GLabel 3355 4550 0    49   Input ~ 0
 CLK
 $Comp
-L R R2
+L device:R R2
 U 1 1 5887EC97
-P 5180 2740
-F 0 "R2" V 5260 2740 50  0000 C CNN
-F 1 "680" V 5180 2740 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 5110 2740 50  0001 C CNN
-F 3 "" H 5180 2740 50  0000 C CNN
-	1    5180 2740
+P 4455 4650
+F 0 "R2" V 4535 4650 50  0000 C CNN
+F 1 "680" V 4455 4650 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4385 4650 50  0001 C CNN
+F 3 "" H 4455 4650 50  0000 C CNN
+	1    4455 4650
 	0    1    1    0   
 $EndComp
-Text GLabel 5330 2740 2    49   UnSpc ~ 0
+Text GLabel 4605 4650 2    49   UnSpc ~ 0
 VCC
 $Comp
-L C_Small C1
+L device:C_Small C1
 U 1 1 5887EE6D
-P 3920 2960
-F 0 "C1" H 3810 3030 50  0000 L CNN
-F 1 "0.1" H 3800 2900 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 3920 2960 50  0001 C CNN
-F 3 "" H 3920 2960 50  0000 C CNN
-	1    3920 2960
+P 3195 4870
+F 0 "C1" H 3085 4940 50  0000 L CNN
+F 1 "0.1" H 3075 4810 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 3195 4870 50  0001 C CNN
+F 3 "" H 3195 4870 50  0000 C CNN
+	1    3195 4870
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3790 3190 4080 3190
+	3195 5000 3355 5000
 Wire Wire Line
-	4080 3090 3920 3090
+	3195 5000 3195 4970
 Wire Wire Line
-	3920 3090 3920 3060
+	3045 4750 3355 4750
 Wire Wire Line
-	3970 3090 3970 3190
-Wire Wire Line
-	3970 3190 3980 3190
-Connection ~ 3980 3190
-Connection ~ 3970 3090
-Wire Wire Line
-	3770 2840 4080 2840
-Wire Wire Line
-	3920 2860 3920 2840
-Connection ~ 3920 2840
-Text GLabel 3020 2780 2    49   Input ~ 0
+	3195 4750 3195 4770
+Connection ~ 3195 4750
+Text GLabel 2295 4690 2    49   Input ~ 0
 LED
-Text GLabel 5330 2490 2    49   Input ~ 0
+Text GLabel 4605 4400 2    49   Input ~ 0
 LED
 $Comp
-L R LED
+L device:R LED
 U 1 1 5887F3A6
-P 5180 2490
-F 0 "LED" V 5260 2490 50  0000 C CNN
-F 1 "0" V 5180 2490 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 5110 2490 50  0001 C CNN
-F 3 "" H 5180 2490 50  0000 C CNN
-	1    5180 2490
+P 4455 4400
+F 0 "LED" V 4535 4400 50  0000 C CNN
+F 1 "0" V 4455 4400 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4385 4400 50  0001 C CNN
+F 3 "" H 4455 4400 50  0000 C CNN
+	1    4455 4400
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4010 2840 4010 2940
+	3285 4750 3285 4850
 Wire Wire Line
-	4010 2940 4080 2940
-Connection ~ 4010 2840
+	3285 4850 3355 4850
+Connection ~ 3285 4750
+Wire Wire Line
+	3065 5100 3355 5100
+Wire Wire Line
+	3305 5100 3305 5000
+Wire Wire Line
+	3305 5000 3300 5000
+Connection ~ 3300 5000
+Connection ~ 3305 5100
 $EndSCHEMATC
