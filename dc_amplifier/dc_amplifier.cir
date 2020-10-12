@@ -1,0 +1,13 @@
+.title KiCad schematic
+.include "LMV981.MOD"
+R2 0 feedbk 2K
+R1 feedbk vout 33K
+v2 vin 0 DC 0V
+v1 VCC 0 DC 5V
+XU1 vin feedbk VCC 0 vout LMV981
+.dc v2 0 0.2 0.01
+.control
+run
+print vin vout
+.endc
+.end

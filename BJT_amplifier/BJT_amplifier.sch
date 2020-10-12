@@ -1,7 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
+EESchema Schematic File Version 4
 LIBS:BJT_amplifier-cache
-EELAYER 25 0
+EELAYER 30 0
 EELAYER END
 $Descr User 6299 7874
 encoding utf-8
@@ -9,14 +8,14 @@ Sheet 1 1
 Title "BJT Transistor Characteristics"
 Date "2018-04-24"
 Rev "0.1.2"
-Comp "KARIBE ELECTRONICS"
+Comp "KARIBE (K) LTD"
 Comment1 ""
 Comment2 "karibe.co.ke"
 Comment3 "@muriukidavid"
-Comment4 "Drawn by: David Muriuki Karibe"
+Comment4 "Drawn by: Karibe David"
 $EndDescr
 $Comp
-L BJT_amplifier-rescue:CONN_01X02-RESCUE-BJT_amplifier v1
+L BJT_amplifier-rescue:BJT_amplifier-rescue_CONN_01X02-RESCUE-BJT_amplifier v1
 U 1 1 59366B5C
 P 1450 5300
 F 0 "v1" H 1450 5450 50  0000 C CNN
@@ -35,7 +34,7 @@ Text Notes 1100 4200 0    60   ~ 0
 Text GLabel 2250 4650 1    60   Input ~ 0
 vcollector
 $Comp
-L device:R R1
+L BJT_amplifier-rescue:device_R R1
 U 1 1 5936898A
 P 1650 5000
 F 0 "R1" V 1730 5000 50  0000 C CNN
@@ -48,7 +47,7 @@ $EndComp
 Text GLabel 1750 4850 1    60   Input ~ 0
 base
 $Comp
-L device:R R2
+L BJT_amplifier-rescue:device_R R2
 U 1 1 59368BD6
 P 2550 4650
 F 0 "R2" V 2630 4650 50  0000 C CNN
@@ -59,7 +58,7 @@ F 3 "" H 2550 4650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L BJT_amplifier-rescue:CONN_01X02-RESCUE-BJT_amplifier v2
+L BJT_amplifier-rescue:BJT_amplifier-rescue_CONN_01X02-RESCUE-BJT_amplifier v2
 U 1 1 59368BFF
 P 2900 5150
 F 0 "v2" H 2900 5300 50  0000 C CNN
@@ -72,7 +71,7 @@ $EndComp
 Text GLabel 2700 4900 2    60   Input ~ 0
 vout
 $Comp
-L device:Q_NPN_EBC Q1
+L BJT_amplifier-rescue:device_Q_NPN_EBC Q1
 U 1 1 5936CAC5
 P 2000 4850
 F 0 "Q1" H 2200 4900 50  0000 L CNN
@@ -83,7 +82,7 @@ F 3 "" H 2000 4850 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	1650 5350 2700 5350
+	1650 5350 2100 5350
 Wire Wire Line
 	2700 5350 2700 5200
 Wire Wire Line
@@ -97,4 +96,6 @@ Wire Wire Line
 Wire Wire Line
 	2100 5350 2100 5050
 Connection ~ 2100 5350
+Wire Wire Line
+	2100 5350 2700 5350
 $EndSCHEMATC

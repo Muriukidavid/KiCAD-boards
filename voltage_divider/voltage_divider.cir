@@ -6,9 +6,9 @@
 * To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
 
 * Sheet Name: /
-R2  vout 0 470		
-R1  vout vin 1k		
-v1  vin 0 DC 12		
+R2  vout 0 10k		
+R1  vout vin 3.9k		
+v1  vin 0 DC 3.3		
 
 .op
 .tran 0.5s 1s
@@ -16,7 +16,15 @@ v1  vin 0 DC 12
 .control
 run
 print all
+*print dc v1#branch
+*print vin
+*print R2
 .endc
+
+*.control
+*dc v1 3.3 3.3 0.1
+*display
+*.endc
 
 .end
 quit

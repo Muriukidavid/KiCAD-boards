@@ -1,8 +1,8 @@
 (export (version D)
   (design
-    (source /home/karibe/src/kicad_boards/Nokia1616_LCD/Nokia1616_LCD.sch)
-    (date "Fri 24 Mar 2017 11:54:53 AM EAT")
-    (tool "Eeschema 4.0.5-e0-6337~49~ubuntu16.04.1")
+    (source /home/muriuki/src/KiCAD-boards/Nokia1616_LCD/Nokia1616_LCD.sch)
+    (date "Fri 09 Nov 2018 03:25:02 PKT")
+    (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title "Nokia Color TFT LCD")
@@ -17,14 +17,14 @@
   (components
     (comp (ref P1)
       (value CONN_01X08)
-      (footprint Pin_Headers:Pin_Header_Straight_1x08)
-      (libsource (lib conn) (part CONN_01X08))
+      (footprint Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm)
+      (libsource (lib Nokia1616_LCD-cache) (part CONN_01X08))
       (sheetpath (names /) (tstamps /))
       (tstamp 588CF000))
     (comp (ref CONN1)
       (value Nokia1616_LCD)
       (footprint Connect:Nokia1616_LCD)
-      (libsource (lib conn) (part Nokia1616_LCD))
+      (libsource (lib Nokia1616_LCD-cache) (part Nokia1616_LCD))
       (sheetpath (names /) (tstamps /))
       (tstamp 588CF2E5))
     (comp (ref C1)
@@ -36,7 +36,7 @@
     (comp (ref Q1)
       (value BC547_BEC_123)
       (footprint TO_SOT_Packages_SMD:SOT-23)
-      (libsource (lib transistors) (part BC547_BEC_123))
+      (libsource (lib Nokia1616_LCD-cache) (part BC547_BEC_123))
       (sheetpath (names /) (tstamps /))
       (tstamp 58C99E38))
     (comp (ref R1)
@@ -47,14 +47,12 @@
       (tstamp 58C9A3B8))
     (comp (ref P2)
       (value CONN_01X08)
-      (footprint Pin_Headers:Pin_Header_Straight_1x08)
-      (libsource (lib conn) (part CONN_01X08))
+      (footprint Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm)
+      (libsource (lib Nokia1616_LCD-cache) (part CONN_01X08))
       (sheetpath (names /) (tstamps /))
       (tstamp 58D4DEA8)))
   (libparts
-    (libpart (lib transistors) (part BC547_BEC_123)
-      (description "45V Vce, 0.1A Ic, NPN, Small Signal Transistor, TO-92")
-      (docs http://www.fairchildsemi.com/ds/BC/BC547.pdf)
+    (libpart (lib Nokia1616_LCD-cache) (part BC547_BEC_123)
       (footprints
         (fp TO-92*))
       (fields
@@ -65,8 +63,7 @@
         (pin (num 1) (name B) (type input))
         (pin (num 2) (name E) (type passive))
         (pin (num 3) (name C) (type passive))))
-    (libpart (lib conn) (part CONN_01X08)
-      (description "Connector, single row, 01x08")
+    (libpart (lib Nokia1616_LCD-cache) (part CONN_01X08)
       (footprints
         (fp Pin_Header_Straight_1X08)
         (fp Pin_Header_Angled_1X08)
@@ -87,18 +84,14 @@
     (libpart (lib device) (part C_Small)
       (description "Unpolarized capacitor")
       (footprints
-        (fp C?)
-        (fp C_????_*)
-        (fp C_????)
-        (fp SMD*_c)
-        (fp Capacitor*))
+        (fp C_*))
       (fields
         (field (name Reference) C)
         (field (name Value) C_Small))
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
-    (libpart (lib conn) (part Nokia1616_LCD)
+    (libpart (lib Nokia1616_LCD-cache) (part Nokia1616_LCD)
       (fields
         (field (name Reference) CON)
         (field (name Value) Nokia1616_LCD))
@@ -117,7 +110,7 @@
       (description Resistor)
       (footprints
         (fp R_*)
-        (fp Resistor_*))
+        (fp R_*))
       (fields
         (field (name Reference) R)
         (field (name Value) R))
@@ -125,12 +118,10 @@
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive)))))
   (libraries
-    (library (logical transistors)
-      (uri /usr/share/kicad/library/transistors.lib))
-    (library (logical conn)
-      (uri /usr/share/kicad/library/conn.lib))
     (library (logical device)
-      (uri /usr/share/kicad/library/device.lib)))
+      (uri /usr/local/share/kicad/library/device.lib))
+    (library (logical Nokia1616_LCD-cache)
+      (uri /home/muriuki/src/KiCAD-boards/Nokia1616_LCD/Nokia1616_LCD-cache.lib)))
   (nets
     (net (code 1) (name LED-)
       (node (ref Q1) (pin 3))

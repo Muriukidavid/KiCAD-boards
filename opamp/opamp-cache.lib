@@ -1,11 +1,11 @@
-EESchema-LIBRARY Version 2.3
+EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# CONN_01X03
+# opamp-rescue_CONN_01X03
 #
-DEF CONN_01X03 J 0 40 Y N 1 F N
+DEF opamp-rescue_CONN_01X03 J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "CONN_01X03" 100 0 50 V V C CNN
+F1 "opamp-rescue_CONN_01X03" 100 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -25,11 +25,11 @@ X P3 3 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# JACK_2P
+# opamp-rescue_JACK_2P
 #
-DEF JACK_2P J 0 40 Y Y 1 F N
+DEF opamp-rescue_JACK_2P J 0 40 Y Y 1 F N
 F0 "J" -350 -200 50 H V C CNN
-F1 "JACK_2P" -150 250 50 H V C CNN
+F1 "opamp-rescue_JACK_2P" -150 250 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -47,14 +47,13 @@ X ~ 3 450 150 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# LM2903
+# opamp-rescue_LM193
 #
-DEF LM2903 U 0 20 Y Y 2 F N
+DEF opamp-rescue_LM193 U 0 20 Y Y 2 F N
 F0 "U" 150 150 50 H V C CNN
-F1 "LM2903" 250 -150 50 H V C CNN
+F1 "opamp-rescue_LM193" 250 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-ALIAS LM293 LM393 LM193
 $FPLIST
  SOIC*Pitch1.27mm*
  DIP*W7.62mm*
@@ -74,11 +73,11 @@ X V+ 8 -100 300 150 D 50 50 2 1 W
 ENDDRAW
 ENDDEF
 #
-# R
+# opamp-rescue_R
 #
-DEF R R 0 0 N Y 1 F N
+DEF opamp-rescue_R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "R" 0 0 50 V V C CNN
+F1 "opamp-rescue_R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST

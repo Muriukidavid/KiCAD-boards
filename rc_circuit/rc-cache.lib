@@ -1,11 +1,11 @@
-EESchema-LIBRARY Version 2.3
+EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# C
+# rc-rescue_C
 #
-DEF C C 0 10 N Y 1 F N
+DEF rc-rescue_C C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "C" 25 -100 50 H V L CNN
+F1 "rc-rescue_C" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -19,11 +19,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# CONN_01X02
+# rc-rescue_CONN_01X02
 #
-DEF CONN_01X02 J 0 40 Y N 1 F N
+DEF rc-rescue_CONN_01X02 J 0 40 Y N 1 F N
 F0 "J" 0 150 50 H V C CNN
-F1 "CONN_01X02" 100 0 50 V V C CNN
+F1 "rc-rescue_CONN_01X02" 100 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -41,11 +41,11 @@ X P2 2 -200 -50 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# R
+# rc-rescue_R
 #
-DEF R R 0 0 N Y 1 F N
+DEF rc-rescue_R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "R" 0 0 50 V V C CNN
+F1 "rc-rescue_R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST

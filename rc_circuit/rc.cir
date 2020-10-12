@@ -1,35 +1,13 @@
-* /home/karibe/src/kicad_boards/rc_circuit/rc.cir
-
-* EESchema Netlist Version 1.1 (Spice format) creation date: Tue 24 Apr 2018 05:23:16 PM EAT
-
-* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
-* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
-
-*filter input – change f, the last number in line 11
-.subckt Jack_in 1 2
-*** Simulate sine wave input
-Vmic 2 1 ac SIN(0 0.02 100)
-.ends Jack_in
-
-* Sheet Name: /
-* v1  0 vin DC 0 AC 1	
-XJ1 0 vin Jack_in	
-R1  vout vin 1K		
-C1  vout 0 1.59uF
-		
-* Filter characteristics simulation
-* .ac dec 10 1 1Meg
-* .control
-* run
-* Magnitude dB plot for vout on log scale
-* plot vdb(vout) xlog
-* Phase degrees plot for vout on log scale
-* plot {57.29*vp(vout)} xlog
-* .endc
-
-* analysis commands
+.title KiCad schematic
+v1 0 vin DC 0 AC 1
+R1 vout vin 1K
+C1 vout 0 1.59uF
+.ac dec 10 1 1Meg 
 .control
-tran 0.1m 20m
-plot vin vout
+run 
+*Magnitude dB plot for vout on log scale 
+plot vdb(vout) xlog 
+*Phase degrees plot for vout on log scale 
+plot {57.29*vp(vout)} xlog 
 .endc
 .end

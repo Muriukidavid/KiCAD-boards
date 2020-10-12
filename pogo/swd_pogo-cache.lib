@@ -1,11 +1,59 @@
-EESchema-LIBRARY Version 2.3
+EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# CONN_01X04
+# Device_C_Small
 #
-DEF CONN_01X04 J 0 40 Y N 1 F N
+DEF Device_C_Small C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "Device_C_Small" 10 -80 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 13 -60 -20 60 -20 N
+P 2 0 1 12 -60 20 60 20 N
+X ~ 1 0 100 80 D 50 50 1 1 P
+X ~ 2 0 -100 80 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R_Small
+#
+DEF Device_R_Small R 0 10 N N 1 F N
+F0 "R" 30 20 50 H V L CNN
+F1 "Device_R_Small" 30 -40 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -30 70 30 -70 0 1 8 N
+X ~ 1 0 100 30 D 50 50 1 1 P
+X ~ 2 0 -100 30 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# swd_pogo-rescue_CONN_01X04
+#
+DEF swd_pogo-rescue_CONN_01X04 J 0 40 Y N 1 F N
 F0 "J" 0 250 50 H V C CNN
-F1 "CONN_01X04" 100 0 50 V V C CNN
+F1 "swd_pogo-rescue_CONN_01X04" 100 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -27,11 +75,11 @@ X P4 4 -200 -150 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# CONN_02X05
+# swd_pogo-rescue_CONN_02X05
 #
-DEF CONN_02X05 J 0 1 Y N 1 F N
+DEF swd_pogo-rescue_CONN_02X05 J 0 1 Y N 1 F N
 F0 "J" 0 300 50 H V C CNN
-F1 "CONN_02X05" 0 -300 50 H V C CNN
+F1 "swd_pogo-rescue_CONN_02X05" 0 -300 50 H V C CNN
 F2 "" 0 -1200 50 H I C CNN
 F3 "" 0 -1200 50 H I C CNN
 $FPLIST
@@ -54,6 +102,7 @@ S 50 5 100 -5 0 1 0 N
 S 50 105 100 95 0 1 0 N
 S 50 205 100 195 0 1 0 N
 X P1 1 -250 200 150 R 50 50 1 1 P
+X P10 10 250 -200 150 L 50 50 1 1 P
 X P2 2 250 200 150 L 50 50 1 1 P
 X P3 3 -250 100 150 R 50 50 1 1 P
 X P4 4 250 100 150 L 50 50 1 1 P
@@ -62,15 +111,14 @@ X P6 6 250 0 150 L 50 50 1 1 P
 X P7 7 -250 -100 150 R 50 50 1 1 P
 X P8 8 250 -100 150 L 50 50 1 1 P
 X P9 9 -250 -200 150 R 50 50 1 1 P
-X P10 10 250 -200 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Conn_02x04_Odd_Even
+# swd_pogo-rescue_Conn_02x04_Odd_Even
 #
-DEF Conn_02x04_Odd_Even J 0 40 Y N 1 F N
+DEF swd_pogo-rescue_Conn_02x04_Odd_Even J 0 40 Y N 1 F N
 F0 "J" 50 200 50 H V C CNN
-F1 "Conn_02x04_Odd_Even" 50 -300 50 H V C CNN
+F1 "swd_pogo-rescue_Conn_02x04_Odd_Even" 50 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST

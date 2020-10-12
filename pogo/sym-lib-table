@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name swd_pogo-rescue)(type Legacy)(uri ${KIPRJMOD}/swd_pogo-rescue.lib)(options "")(descr ""))
+)

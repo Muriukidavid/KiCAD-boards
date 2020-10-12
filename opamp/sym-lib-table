@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name opamp-rescue)(type Legacy)(uri ${KIPRJMOD}/opamp-rescue.lib)(options "")(descr ""))
+)

@@ -1,4 +1,4 @@
-update=Fri 09 Feb 2018 06:22:54 PM EAT
+update=Tue 05 Nov 2019 08:51:19 PM PKT
 version=1
 last_client=kicad
 [pcbnew]
